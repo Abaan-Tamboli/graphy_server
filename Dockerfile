@@ -1,4 +1,5 @@
-FROM node:hydrogen-buster
+# Use the latest Node.js image based on Debian Bullseye or Alpine
+FROM node:18-bullseye  # or node:18-alpine
 
 # Install patched version of git (1:2.20.1-2+deb10u9)
 RUN apt-get update && \
