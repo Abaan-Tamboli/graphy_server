@@ -1,5 +1,5 @@
 # Use the latest Node.js image based on Debian Bullseye or Alpine
-FROM node:18-bullseye  # or node:18-alpine
+FROM node:20.17-slim
 
 # Install patched version of git (1:2.20.1-2+deb10u9)
 RUN apt-get update && \
